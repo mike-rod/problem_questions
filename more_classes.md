@@ -1,21 +1,17 @@
 So far with classes in Ruby, we’ve mostly dealt with **instance** methods and variables. For example, in:
 
 ```ruby
-	class Dog
-	   attr_accessor : name, :sound
+class Dog
+ attr_accessor :name, :sound
 
-	   def bark
-	      "#{sound}, #{sound}, my name is #{name} and I’m a Dog."
-	    end
+ def bark
+    "#{sound}, #{sound}, my name is #{name} and I’m a Dog."
+ end
 
-  end
+end
 ```
 
-name and sound are **instance** variables, and bark is an **instance** method.
-
-In Ruby, we also have **class** methods and **class** variables.
-
-Where instance variables use the `@` symbol, as in `@name`.
+name and sound are **instance** variables, and bark is an **instance** method. In Ruby, we also have **class** methods and **class** variables. Where instance variables use the `@` symbol, as in `@name`.
 **Class** variables use `@@`, as in `@@name`
 
 **Class** methods have the keyword `self` before their name, a **class** method of `bark` would like this:    
@@ -99,9 +95,6 @@ p coffee_cup.main_use
 
 Create a Robot class that has a **class** variable of `num_of_robots`, a **class** method that returns the number of robots, an **instance** variable of id, and an **instance** method that returns the id.
 Instantiate (create) 3 robots with unique id’s, and then call the Robot’s **class** method to return the number of robots.
-
-
-
 
 
 Let’s now go into inheritance. Inheritance is a relationship between two classes where a child class inherits, or receives, the properties of a parent class. Take a look at the example below:
